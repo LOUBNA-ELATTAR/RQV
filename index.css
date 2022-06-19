@@ -1,0 +1,38 @@
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.navbar{
+  padding-top: 0;
+}
+
+.navbar a:hover{
+  text-decoration: none;
+}
+
+.row .btn {
+  width: 300px;
+}
+li{
+  margin: 0 15px;
+}
+.row a{
+  display: block;
+  margin: 30px;
+  width: 300px;
+}
+.row img{
+  position: relative;
+  top: -80px;
+  width: 25rem;
+  height: 25rem;
+}
+.col-lg-6{
+  padding: 0;
+}

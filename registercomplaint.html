@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Effectuer une déclaration</title>
+    <style media="screen">
+      h1{
+        text-align: center;
+        margin: 30px;
+      }
+        .registerform{
+            margin-top: 3%;
+            width:50vw;
+            max-width: 90vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-group{
+            margin: 2vw;
+        }
+        .btn{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .btn:hover{
+          border-color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Effectuer une déclaration de vol</h1>
+    <div class="card registerform">
+        <form action="storecomplaint.php" method="POST">
+          <div class="form-group">
+            <label for="inputComplaint">Sélectionnez :</label>
+            <select class="form-control" id="inputComplaint" name="typeComplaint">
+              <option>Témoin</option>
+              <option>Victime</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inputName">Le nom de la personne suspecte (si vous le savez)</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Entrez le nom de la personne suspecte (si vous le savez)" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="inputIncDT">La date et le temps de l'accident</label>
+            <input type="datetime-local" class="form-control" id="inputIncDT" placeholder="Entrez la date et le temps de l'accident" name="incDT" required>
+          </div>
+
+
+          <div class="form-group">
+            <label for="inputIncDT">Le lieu de l'accident</label>
+            <input type="text" class="form-control" id="inputIncDT" placeholder="Entrez la date et le temps de l'accident" name="incDT" required>
+          </div>
+
+          <div class="form-group">
+            <label for="inputComplaint">Sélectionnez le type du vol</label>
+            <select class="form-control" id="inputComplaint" name="typeComplaint">
+              <option>Vol de bicyclette</option>
+              <option>Vol de véhicule à moteur</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="inputIncDT">La plaque d'immatriculation</label>
+            <input type="text" class="form-control" id="inputIncDT" placeholder="Entrez la plaque de l'immatriculation (si vous en rappelez)" name="incDT" required>
+          </div>
+
+          <div class="form-group">
+            <label for="inputIncDT">Détails supplémentaires</label>
+            <input type="text" class="form-control" id="inputIncDT" placeholder="Développez..." name="incDT" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="background-color:#333">Envoyer</button>
+        </form>
+    </div>
+  </body>
+</html>
